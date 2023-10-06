@@ -1,7 +1,7 @@
 
 // -----------Header--------
 
-const burgerBtn = document.querySelector('.row-burger');
+const burgerBtn = document.querySelector('.menu-btn');
 const dropMenu = document.querySelector('.drop-menu');
 
 let menuOpen = false;
