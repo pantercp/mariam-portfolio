@@ -16,32 +16,24 @@
 
 .home-hero .intro-container {
     position: relative;
-    background-color: #00000071;
+    background-color: #000000d4;
     color: var(--secondary);
-    border: 2px solid #ffffff3b;
+    border: 5px solid #070000;
+    border-left: 1px solid #171616;
+    border-top: 1px solid #171616;
+    box-shadow: 0 2px 5px rgba(219, 12, 12, 0.507);
     border-radius: 1rem;
     padding: 1rem;
     right: max(5%, 20px);
     width: max(40%, 220px);
 }
 
-button.red,
-button.white {
-    padding: 0.25rem 1rem;
-    margin: 1rem 0 0 0;
-    font-size: 0.8rem;
-    background-color: var(--primary);
-    color: var(--secondary);
-    border-radius: 3rem;
-}
-
-button.white {
-    background-color: var(--secondary);
-    color: var(--primary);
-}
-
 .home-hero .intro h1 {
     margin-bottom: 0.5rem;
+}
+
+.home-hero .intro p {
+    margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -77,6 +69,24 @@ button.white {
     text-align: justify;
 }
 
+.articles-projects-wrap{
+    display: flex;
+}
+
+.articles-projects-wrap .content-wrap{
+    margin: 1rem;
+}
+
+.articles-projects-wrap .content-wrap h3{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.articles-projects-wrap .content-wrap p{
+    margin-bottom: 1rem;
+}
+
+
 
 
 /* -----------Organisations---------- */
@@ -94,7 +104,7 @@ button.white {
 }
 
 .organisations-banner .info-container h2 {
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 
 /* -----------Featured---------- */
@@ -120,6 +130,10 @@ button.white {
 .featured-banner .contain-info .featured-text {
     max-width: 800px;
     margin: 0.5rem;
+}
+
+.featured-banner .contain-info .featured-text p{
+    margin-bottom: 1rem;
 }
 
 .featured-banner .featured-text h3 {
@@ -153,6 +167,38 @@ button.white {
 
 .testimonials {
     margin: 1rem 0.5rem;
+    height: 200px;
+    position: relative;
+}
+
+.testimonial-wrap{
+    position: absolute;
+    width: 100%;
+}
+
+.testimonial-wrap .testimonial.next{
+    position: absolute;
+    font-size: 0.5rem;
+    max-width: 250px;
+    right: 10px
+}
+
+.testimonial-wrap .testimonial.show{
+    position: relative;
+    width: 100%;
+}
+
+.testimonial-wrap .testimonial.prev{
+    position: absolute;
+    left: 10px;
+    font-size: 0.5rem;
+    max-width: 250px;
+}
+
+.nextbutton{
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 0.25rem 0.5rem;
 }
 
 .testimonial {
