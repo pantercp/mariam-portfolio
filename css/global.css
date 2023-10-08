@@ -10,9 +10,14 @@ html {
     font-size: calc(15px + 0.390625vw);
 }
 
+:root {
+    --primary: #840032;
+    --secondary: #CCD7C5;
+}
+
 body {
     background-color: var(--background-color);
-    --background-color: #feeeee;
+    --background-color: var(--secondary);
     --text-color: #000;
     --accent-color: #840032;
     --accent-text-color: #CCD7C5;
@@ -21,14 +26,13 @@ body {
 
 /* -----------Navigation---------- */
 
-
 #header {
     position: sticky;
     top: 0;
     z-index: 999;
     height: 10vh;
     padding: 10px 10px;
-    background-color: var(--accent-color);
+    background-color: var(--primary);
 
 }
 
@@ -50,7 +54,6 @@ nav {
 
 .row-name {
     position: fixed;
-    height: 25px;
     width: 100%;
     text-align: center;
 }
@@ -59,10 +62,22 @@ nav {
     height: 25px;
 }
 
+@media only screen and (max-width: 410px) {
+
+    .logo-name{
+        height: 20px;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+}
+
 /* Page Menu */
 
 .drop-menu{
-    color: #CCD7C5;
+    color: var(--secondary);
 }
 
 .drop-menu ul{
@@ -105,8 +120,10 @@ nav {
     .drop-menu.open li{
         padding: 0.5rem 1rem;
         margin: 0;
-        background-color: #CCD7C5;
-        color: #840032;
+        background-color: var(--secondary);
+        border: 2px solid #8400335b;
+        border-top: none;
+        color: var(--primary);
     }
 }
 
@@ -126,7 +143,7 @@ nav {
 .burger-icon {
     width: 30px;
     height: 2px;
-    background: #CCD7C5;
+    background: var(--secondary);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
     transition: all .5s ease-in-out;
@@ -138,7 +155,7 @@ nav {
     position: absolute;
     width: 30px;
     height: 2px;
-    background: #CCD7C5;
+    background: var(--secondary);
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
     transition: all .3s ease-in-out;
@@ -243,8 +260,8 @@ nav {
     padding-top: 20px;
     justify-content: space-around;
     align-items: flex-start;
-    background-color: var(--accent-color);
-    color: var(--accent-text-color);
+    background-color: var(--primary);
+    color: var(--secondary);
 }
 
 .foot-pages {
@@ -268,7 +285,7 @@ nav {
 .container-footer a {
     text-decoration: none;
     font-size: 0.8em;
-    color: var(--background-color);
+    color: var(--secondary);
 }
 
 .footer-about p {
@@ -281,7 +298,7 @@ nav {
 .container-footer i {
     font-size: 1.4em;
     margin: 10px;
-    color: var(--background-color);
+    color: var(--secondary);
 }
 
 .contain-links {
@@ -295,7 +312,7 @@ nav {
     padding: 13px 10px 10px 10px;
     text-align: center;
     border-radius: 5px;
-    background-color: var(--main);
+    background-color: var(--primary);
 }
 
 .footer-cjpixel-about img {
@@ -314,7 +331,7 @@ nav {
     height: 80%;
     top: 12px;
     left: -2px;
-    background: var(--accent-text-color);
+    background: var(--primary);
     border-radius: 3px;
 }
 
