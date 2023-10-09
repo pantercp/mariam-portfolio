@@ -56,6 +56,7 @@
 .portfolio-section .intro-wrap{
     max-width: 1000px;
     margin-inline: auto;
+    margin-bottom: 2rem;
 }
 
 .portfolio-section h2{
@@ -69,35 +70,52 @@
     text-align: justify;
 }
 
-.articles-projects-wrap{
+/* -----------Projects---------- */
+
+
+.articles-section{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-block: 1rem 2rem;
 }
 
-.articles-projects-wrap .content-wrap{
+.articles-section .content-wrap{
     margin: 1rem;
-    max-width: 600px;
+    max-width: 500px;
+    flex-shrink: 2;
 }
 
-.articles-projects-wrap .content-wrap h3{
+.articles-section .content-wrap h3{
     margin-bottom: 1rem;
     font-size: 2rem;
 }
 
-.articles-projects-wrap .content-wrap p{
+.articles-section .content-wrap p{
     margin-bottom: 1rem;
+    font-size: 0.9rem;
 }
 
-/* -----------Projects---------- */
+@media only screen and (max-width: 600px) {
+    .articles-section{
+        flex-wrap: wrap;
+    }
+
+    .articles-section .content-wrap {
+        margin: 1rem 0 2rem 0;
+    }
+}
+
 
 .article-wrap{
     background-color: var(--primary);
     width: 100%;
+    max-width: 500px;
+    flex-shrink: 1;
 }
 
 .article-wrap h4 {
-    margin-block: 0.5rem;
+    margin-block: 0.25rem;
     font-size: 0.8rem;
     color: var(--primary);
 }
@@ -162,16 +180,27 @@
     transition: all 0.3s ease-in;
 }
 
+.articles-section .article-wrap .article-detail p.info{
+    margin-block: 0.;
+    font-size: 0.1rem;
+    font-style: italic;
+    color: #e38181;
+}
+
+.articles-section .article-wrap .article-detail.open p.info{
+    margin-block: 0.25rem 1rem;
+    font-size: 1rem;
+}
+
 .article-wrap .article-detail.open p {
     opacity: 1;
     margin: 0.5rem;
     font-size: 0.8rem;
     text-align: justify;
     position: relative;
-    /* border-left: 2px solid; */
 }
 
-.articles-projects-wrap .article-detail.open .left-border::before {
+.articles-section .article-detail.open .left-border::before {
     content: '';
     position: absolute;
     left: 0;
@@ -180,6 +209,46 @@
     height: 80%;
     width: 2px;
 }
+
+/* -----------Projects---------- */
+
+.project-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-wrap .contain-detail{
+    margin: 0.5rem;
+}
+
+.project-wrap h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.project-wrap p{
+    margin-bottom: 1rem;
+}
+
+.project-wrap .contain-image{
+    max-width: 600px;
+    padding: 0.5rem;
+}
+
+.project-wrap img{
+    max-width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 15px rgb(0 0 0 / 51%);
+
+}
+
+@media only screen and (max-width: 600px) {
+    .project-wrap{
+        flex-wrap: wrap;
+    }
+}
+
 
 /* -----------Organisations---------- */
 
