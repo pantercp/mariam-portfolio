@@ -16,7 +16,7 @@
 
 .home-hero .intro-container {
     position: relative;
-    background-color: #000000d4;
+    background-color: #000000a1;
     color: var(--secondary);
     border: 5px solid #070000;
     border-left: 1px solid #171616;
@@ -71,10 +71,13 @@
 
 .articles-projects-wrap{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .articles-projects-wrap .content-wrap{
     margin: 1rem;
+    max-width: 600px;
 }
 
 .articles-projects-wrap .content-wrap h3{
@@ -86,8 +89,97 @@
     margin-bottom: 1rem;
 }
 
+/* -----------Projects---------- */
 
+.article-wrap{
+    background-color: var(--primary);
+    width: 100%;
+}
 
+.article-wrap h4 {
+    margin-block: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--primary);
+}
+
+.article-wrap .detail-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--secondary);
+    padding-inline: 1rem;
+    border-radius: 0.5rem;
+}
+
+.article-wrap .detail-top:hover{
+    border: 1px solid var(--primary);
+}
+
+.article-wrap .toggle-button{
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-wrap .toggle-button::before,
+.article-wrap .toggle-button::after{
+    content: '';
+    position: absolute;
+    background: var(--primary);
+    border-radius: 0.5rem;
+    width: 80%;
+    height: 2px;
+    transition: all 0.3s ease-in;
+}
+
+.article-wrap .toggle-button::before{
+    transform: rotate(90deg);
+}
+
+.article-wrap .toggle-button::after{
+    transform: rotate(0deg);
+}
+
+.article-wrap .toggle-button.open::before{
+    transform: rotate(360deg);
+}
+
+.article-wrap .toggle-button.open::after{
+    transform: rotate(-180deg);
+}
+
+.article-wrap .article-detail p {
+    pointer-events: none;
+    opacity: 0;
+    font-size: 0.1rem;
+    padding-left: 1rem;
+    text-align: justify;
+    transition: all 0.3s ease-in;
+}
+
+.article-wrap .article-detail.open p {
+    opacity: 1;
+    margin: 0.5rem;
+    font-size: 0.8rem;
+    text-align: justify;
+    position: relative;
+    /* border-left: 2px solid; */
+}
+
+.articles-projects-wrap .article-detail.open .left-border::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10%;
+    background: var(--secondary);
+    height: 80%;
+    width: 2px;
+}
 
 /* -----------Organisations---------- */
 
