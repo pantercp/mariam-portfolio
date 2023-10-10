@@ -316,6 +316,17 @@
     font-size: 2rem;
 }
 
+.organisations-banner .logo-container img.logo-icon{
+    max-height: 60px;
+}
+
+.organisations-banner .logo-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-block: 2rem 1rem;
+}
+
 /* -----------Featured---------- */
 
 .featured-banner {
