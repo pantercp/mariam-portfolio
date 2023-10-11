@@ -48,61 +48,77 @@
 
 /* -----------Portfolio---------- */
 
-.portfolio-section{
+.portfolio-section {
     padding: 2rem 1rem;
     background-color: var(--primary);
     color: var(--secondary);
     text-align: center;
 }
-.portfolio-section .intro-wrap{
+
+.portfolio-section .intro-wrap {
     max-width: 1000px;
     margin-inline: auto;
     margin-bottom: 2rem;
 }
 
-.portfolio-section h2{
+.portfolio-section h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
     text-align: center;
 
 }
 
-.portfolio-section p{
+.portfolio-section p {
     text-align: justify;
 }
 
 /* -----------Articles---------- */
 
-.portfolio-section h3{
-    /* margin-bottom: 1rem; */
+.portfolio-section h3 {
     font-size: 2rem;
     text-align: center;
 }
 
-.portfolio-section button{
-    margin-inline: auto;
-}
-
-.articles-section{
+.articles-section {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-block: 1rem;
 }
 
-.articles-section .content-wrap{
+.article-wrap h3{
+    margin-bottom: 1rem;
+}
+
+.articles-section ul {
+    text-align: left;
+    padding: 0.5rem 2rem;
+    list-style-type: square;
+}
+
+.articles-section ul span {
+    font-style: italic;
+    color: var(--third);
+}
+
+.articles-section .content-wrap {
     margin-inline: 1rem;
     max-width: 500px;
     flex-shrink: 2;
 }
 
 
-.articles-section .content-wrap p{
+.articles-section .content-wrap p {
     font-size: 0.9rem;
 }
 
 @media only screen and (max-width: 600px) {
-    .articles-section{
+
+    .portfolio-section .intro-wrap{
+        margin-bottom: 0;
+    }
+
+    .articles-section {
         flex-wrap: wrap;
     }
 
@@ -110,13 +126,13 @@
         margin-block: 1.5rem;
     }
 
-    .articles-section{
+    .articles-section {
         margin-block: 0 1rem;
     }
 }
 
 
-.article-wrap{
+.article-wrap {
     background-color: var(--primary);
     width: 100%;
     max-width: 500px;
@@ -129,7 +145,7 @@
     color: var(--primary);
 }
 
-.article-wrap .detail-top{
+.article-wrap .detail-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -139,11 +155,11 @@
     border-radius: 0.5rem;
 }
 
-.article-wrap .detail-top:hover{
+.article-wrap .detail-top:hover {
     border: 1px solid var(--primary);
 }
 
-.article-wrap .toggle-button{
+.article-wrap .toggle-button {
     position: relative;
     display: block;
     width: 25px;
@@ -154,7 +170,7 @@
 }
 
 .article-wrap .toggle-button::before,
-.article-wrap .toggle-button::after{
+.article-wrap .toggle-button::after {
     content: '';
     position: absolute;
     background: var(--primary);
@@ -164,19 +180,19 @@
     transition: all 0.3s ease-in;
 }
 
-.article-wrap .toggle-button::before{
+.article-wrap .toggle-button::before {
     transform: rotate(90deg);
 }
 
-.article-wrap .toggle-button::after{
+.article-wrap .toggle-button::after {
     transform: rotate(0deg);
 }
 
-.article-wrap .toggle-button.open::before{
+.article-wrap .toggle-button.open::before {
     transform: rotate(360deg);
 }
 
-.article-wrap .toggle-button.open::after{
+.article-wrap .toggle-button.open::after {
     transform: rotate(-180deg);
 }
 
@@ -189,14 +205,14 @@
     transition: all 0.3s ease-in;
 }
 
-.articles-section .article-wrap .article-detail p.info{
+.articles-section .article-wrap .article-detail p.info {
     margin-block: 0.;
     font-size: 0.1rem;
     font-style: italic;
     color: #e38181;
 }
 
-.articles-section .article-wrap .article-detail.open p.info{
+.articles-section .article-wrap .article-detail.open p.info {
     margin-block: 0.25rem 1rem;
     font-size: 1rem;
 }
@@ -221,46 +237,47 @@
 
 /* -----------Projects---------- */
 
-.project-wrap{
+.project-wrap {
     margin-top: 2rem;
     text-align: center;
 }
 
-.project-wrap h3{
+.project-wrap h3 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     margin: 0 0.5rem;
     font-style: italic;
 }
 
-.project-wrap .bb-text{
+.project-wrap .bb-text {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.project-wrap .contain-detail{
+.project-wrap .contain-detail {
     text-align: justify;
     margin-inline: auto;
     max-width: 1000px;
 }
 
-.project-wrap .bb-logo{
+.project-wrap .bb-logo {
     max-width: 250px;
     padding: 0.5rem;
     margin: 0.5rem;
 }
 
-.project-wrap p{
+.project-wrap p {
     padding: 1rem;
     max-width: 700px;
 }
 
 @media only screen and (max-width: 650px) {
-    .project-wrap .bb-text{
+    .project-wrap .bb-text {
         flex-wrap: wrap;
     }
-    .project-wrap .bb-logo{
+
+    .project-wrap .bb-logo {
         max-width: 200px;
         margin-block: 1rem 0.5rem;
     }
@@ -271,6 +288,7 @@
 .organisations-banner {
     background-color: var(--primary);
     padding: 1rem;
+    margin-top: 2rem;
 }
 
 .organisations-banner .info-container {
@@ -284,12 +302,13 @@
     font-size: 2rem;
 }
 
-.organisations-banner .logo-container img.logo-icon{
+.organisations-banner .logo-container img.logo-icon {
     max-height: 60px;
 }
 
-.organisations-banner .logo-container{
+.organisations-banner .logo-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     margin-block: 2rem 1rem;
@@ -312,22 +331,38 @@
 .featured-banner .contain-info .featured-text {
     max-width: 800px;
     margin: 0.5rem;
+    text-align: center;
 }
 
-.featured-banner .contain-info .featured-text p{
-    margin-bottom: 1rem;
+.featured-banner .contain-info .featured-text p {
+    margin-block: 1rem;
+    text-align: justify;
 }
 
 .featured-banner .featured-text h3 {
     margin-bottom: 0.5rem;
     font-size: 1.4rem;
+    text-align: justify;
 }
+
 
 .featured-banner .contain-info img {
     max-width: 250px;
     margin: 0.5rem;
 }
 
+.featured-banner .featured-text button.fill-in.white {
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary);
+    margin-top: 1rem;
+    color: var(--third);
+
+    &:hover,
+    &:focus {
+        box-shadow: inset 0 0 0 2em var(--third);
+        color: var(--secondary);
+    }
+}
 
 @media only screen and (max-width: 650px) {
     .featured-banner .contain-info {
@@ -339,6 +374,10 @@
         margin: 1rem 0.5rem;
     }
 
+    .featured-banner .featured-text button {
+        margin-top: 1rem;
+    }
+
     .featured-banner .contain-info img {
         max-width: 250px;
         margin: 1rem 0.5rem;
@@ -348,8 +387,8 @@
 
 /* ----------Testimonials---------- */
 
-.testimonials-section{
-    background-color: var(--primary);
+.testimonials-section {
+    background-color: var(--third);
     color: var(--secondary);
     text-align: center;
     font-size: 2rem;
@@ -457,7 +496,7 @@
 .nav-btn::before {
     font-size: 20px;
     color: var(--secondary);
-;
+    ;
 }
 
 .swiper-pagination-bullet {
