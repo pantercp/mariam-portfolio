@@ -223,80 +223,48 @@
 
 .project-wrap{
     margin-top: 2rem;
-    max-width: 1050px;
-    margin-inline: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.project-wrap .contain-detail{
-    margin: 0.5rem;
-    max-width: 550px;
+    text-align: center;
 }
 
 .project-wrap h3{
-    font-size: 2rem;
-    text-align: left;
-}
-
-.project-wrap .contain-image{
-    padding: 1rem;
-}
-
-.project-wrap img{
-    max-width: 100%;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 15px rgb(0 0 0 / 51%);
-
-}
-
-.bb-intro{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.project-wrap .bb-logo{
-    max-width: 150px;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    border-radius: 1rem;
-    box-shadow: none;
-}
-
-.bb-intro span{
-    font-size: 1.2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin: 0 0.5rem;
     font-style: italic;
 }
 
-.project-wrap p{
-    padding: 1rem 0;
-    position: relative;
-    font-size: 1rem;
+.project-wrap .bb-text{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
-/* 
-.project-wrap .bottom-border::before {
-    content: '';
-    position: absolute;
-    left: 5%;
-    bottom: 0;
-    background: var(--secondary);
-    height: 3px;
-    width: 30%;
-} */
 
-@media only screen and (max-width: 600px) {
-    .project-wrap{
+.project-wrap .contain-detail{
+    text-align: justify;
+    margin-inline: auto;
+    max-width: 1000px;
+}
+
+.project-wrap .bb-logo{
+    max-width: 250px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.project-wrap p{
+    padding: 1rem;
+    max-width: 700px;
+}
+
+@media only screen and (max-width: 650px) {
+    .project-wrap .bb-text{
         flex-wrap: wrap;
     }
-
     .project-wrap .bb-logo{
-        max-width: 100px;
-        padding: 0;
+        max-width: 200px;
+        margin-block: 1rem 0.5rem;
     }
 }
-
 
 /* -----------Organisations---------- */
 
@@ -380,6 +348,138 @@
 
 /* ----------Testimonials---------- */
 
+.testimonials-section{
+    background-color: var(--primary);
+    color: var(--secondary);
+    text-align: center;
+    font-size: 2rem;
+    padding-block: 1rem;
+}
+
+.container-testimonial {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    padding: 0 1rem;
+}
+
+.testimonial {
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.testimonial .image {
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.slide p {
+    text-align: center;
+    padding: 0 160px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+.slide .quote-icon {
+    font-size: 30px;
+    color: var(--secondary);
+}
+
+.slide .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details .name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.details .job {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--secondary);
+}
+
+.testi-content {
+    position: relative;
+}
+
+.nav-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    /* transform: translateY(30px); */
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    background-color: #ccd7c558;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.nav-btn:hover {
+    background-color: #ccd7c582;
+}
+
+.nav-btn::after,
+.nav-btn::before {
+    font-size: 20px;
+    color: var(--secondary);
+;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #4070f4;
+}
+
+@media screen and (max-width: 768px) {
+    .slide p {
+        padding: 20px 50px;
+    }
+
+    .testimonial .slide {
+        row-gap: 10px;
+    }
+}
+
+
+/* 
 .background{
     background-color: var(--third);
 }
@@ -440,7 +540,7 @@
 
 .testimonial span {
     font-style: italic;
-}
+} */
 
 
 @media only screen and (max-width: 600px) {

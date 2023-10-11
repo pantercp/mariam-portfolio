@@ -12,6 +12,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
         rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper.min.css">
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/c0e039a635.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <script defer src="app.js"></script>
@@ -45,8 +49,9 @@
         <div class="intro-container">
             <div class="intro">
                 <h1>Hi, I'm Mariam...</h1>
-                <p>I’m a London-born Afghan and freelance writer with a deep interest in travel, wellbeing and cultural
-                    exchange.</p>
+                <p>I’m a London-born Afghan and freelance journalist with a deep interest in diaspora stories, minority
+                    perspectives and narratives from around the globe.
+                </p>
                 <button class=" fill-in">Let's Chat</button>
             </div>
         </div>
@@ -54,75 +59,81 @@
     <div class="portfolio-section">
         <div class="intro-wrap">
             <h2 class="fade-in">Portfolio</h2>
-            <p class="fade-in">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores ipsa neque ex
-                maxime. Molestiae
-                inventore qui temporibus, quidem minima unde? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sequi, doloribus!</p>
+            <p class="fade-in">Below you'll find a snippet into my feature writing. These particular articles
+                were
+                crafted with an impactful and insightful intention in mind. For a browse into my full portfolio,
+                please see the button below. </p>
         </div>
-        <h3 class="fade-in">Articles</h3>
+        <!-- <h3 class="fade-in">Articles</h3> -->
         <div class="articles-section">
             <div class="content-wrap">
-                <p class="fade-in">Below you'll find a snippet into my feature writing. These particular articles
+                <div class="article-wrap">
+                    <div class="article-detail">
+                        <div class="detail-top fade-in">
+                            <h4>What does it mean to travel as a person of colour?</h4>
+                            <div class="toggle-button"></div>
+                        </div>
+                        <p class="left-border fade-in">Having to actually confirm what POC stood for with a friend,
+                            before
+                            acknowledging that I do in fact count as a “person of colour”, was a very strange
+                            revelation. A
+                            phrase I’d heard referenced before, but tried not to put too much weight behind because like
+                            all
+                            labels, stereotype comes with it...</p>
+                        <p class="info"><span>The Boar</span></p>
+                    </div>
+                    <div class="article-detail">
+                        <div class="detail-top fade-in">
+                            <h4>Business, Sales & Marketing</h4>
+                            <div class="toggle-button"></div>
+                        </div>
+                        <p class="left-border">Having worked in Sales and Social Media Marketing with a degree in
+                            Business with Finance, I work with my clients on how to approach their online business
+                            from a number of perspectives. </p>
+                        <p class="info"><span>The Boar</span></p>
+
+                    </div>
+                    <div class="article-detail">
+                        <div class="detail-top fade-in">
+                            <h4>Project Management</h4>
+                            <div class="toggle-button"></div>
+                        </div>
+                        <p class="left-border">I believe planning and communication are key to success. From a
+                            charitable project in Borneo's primary rainforest to continuosly improving processes
+                            involved with a global manufacturing business, my experience in project management
+                            leaves you in comfortable hands.</p>
+                        <p class="info"><span>The Boar</span></p>
+                    </div>
+                </div>
+                <!-- <p class="fade-in">Below you'll find a snippet into my feature writing. These particular articles
                     were
                     crafted with an impactful and insightful intention in mind. For a browse into my full portfolio,
-                    please see the button below.</p>
-            </div>
-            <div class="article-wrap">
-                <div class="article-detail">
-                    <div class="detail-top fade-in">
-                        <h4>What does it mean to travel as a person of colour?</h4>
-                        <div class="toggle-button"></div>
-                    </div>
-                    <p class="left-border fade-in">Having to actually confirm what POC stood for with a friend,
-                        before
-                        acknowledging that I do in fact count as a “person of colour”, was a very strange
-                        revelation. A
-                        phrase I’d heard referenced before, but tried not to put too much weight behind because like
-                        all
-                        labels, stereotype comes with it...</p>
-                    <p class="info"><span>The Boar</span></p>
-                </div>
-                <div class="article-detail">
-                    <div class="detail-top fade-in">
-                        <h4>Business, Sales & Marketing</h4>
-                        <div class="toggle-button"></div>
-                    </div>
-                    <p class="left-border">Having worked in Sales and Social Media Marketing with a degree in
-                        Business with Finance, I work with my clients on how to approach their online business
-                        from a number of perspectives. </p>
-                    <p class="info"><span>The Boar</span></p>
-
-                </div>
-                <div class="article-detail">
-                    <div class="detail-top fade-in">
-                        <h4>Project Management</h4>
-                        <div class="toggle-button"></div>
-                    </div>
-                    <p class="left-border">I believe planning and communication are key to success. From a
-                        charitable project in Borneo's primary rainforest to continuosly improving processes
-                        involved with a global manufacturing business, my experience in project management
-                        leaves you in comfortable hands.</p>
-                    <p class="info"><span>The Boar</span></p>
-                </div>
+                    please see the button below.</p> -->
             </div>
         </div>
         <button class="fill-in fade-in">Articles</button>
-        <div class="project-wrap">
-            <div class="contain-detail">
-                <div class="bb-intro">
-                    <div class="bb-text">
-                        <h3 class="fade-in">Budget Backpackers</h3>
-                        <p><span>"Make a nomadic life last"</span></p>
-                    </div>
-                    <img class="bb-logo" src="images/Copywriting Version 1 (2).png" alt="">
+        <div class="organisations-banner">
+            <div class="info-container">
+                <h2 class="fade-in">As Featured in...</h2>
+                <div class="logo-container">
+                    <img class="logo-icon" src="images/Untold_NEW-white-large-01.png" alt="">
+                    <img class="logo-icon" src="images/2015_MSN_logo.svg.png" alt="">
+                    <img class="logo-icon" src="images/Favicon-thf.png" alt="">
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="project-wrap">
+        <h3 class="fade-in">Budget Backpackers</h3>
+        <div class="contain-detail">
+            <div class="bb-text">
+                <img class="bb-logo" src="images/Budget Backpackers.png" alt="">
                 <p class="fade-in">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, delectus velit placeat
                     aut commodi
                     expedita natus, cupiditate culpa nemo voluptate eum maiores quasi. Incidunt quis eum consequuntur
-                    quisquam voluptas iusto!</p>
-            </div>
-            <div class="contain-image">
-                <img class="fade-in" src="images/budget-backpackers.jpg" alt="">
+                    quisquam voluptas iusto! <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis repudiandae
+                    dignissimos fugit sunt possimus aliquid, cumque eaque excepturi id cum..</p>
             </div>
         </div>
         <button class="fill-in fade-in">Instagram</button>
@@ -131,6 +142,7 @@
 
     <div class="featured-banner">
         <div class="contain-info">
+            <img class="fade-in" src="images/selfish.png" alt="">
             <div class="featured-text">
                 <h3 class="fade-in">S2 E6. Mariam - Volunteering with Afghans a massive wake up call</h3>
                 <p class="fade-in">Mariam talks movingly and very honestly about her identity as a young woman from a
@@ -140,57 +152,71 @@
                     who she shares a culture and history with.</p>
                 <button class="fill-in white fade-in">Listen On Spotify Now</button>
             </div>
-            <img class="fade-in" src="images/selfish.png" alt="">
         </div>
     </div>
-    <div class="organisations-banner">
-        <div class="info-container">
-            <h2 class="fade-in">As Featured in...</h2>
-            <div class="logo-container">
-                <img class="logo-icon" src="images/2015_MSN_logo.svg.png" alt="">
-                <img class="logo-icon" src="images/Favicon-thf.png" alt="">
-                <img class="logo-icon" src="images/Untold_NEW-white-large-01.png" alt="">
+
+    <section class="testimonials-section">
+        <h2>Testimonials</h2>
+        <section class="container-testimonial">
+            <div class="testimonial mySwiper">
+                <div class="testi-content swiper-wrapper">
+                    <div class="slide swiper-slide">
+                        <img src="images/A Pic for Peak in the Peaks.png" alt="" class="image" />
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                            saepe provident dolorem a quaerat quo error facere nihil deleniti
+                            eligendi ipsum adipisci, fugit, architecto amet asperiores
+                            doloremque deserunt eum nemo.
+                        </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                        <div class="details">
+                            <span class="name">Marnie Lotter</span>
+                            <span class="job">Web Developer</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="images/Acatenango Hike, Guatemala.png" alt="" class="image" />
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                            saepe provident dolorem a quaerat quo error facere nihil deleniti
+                            eligendi ipsum adipisci, fugit, architecto amet asperiores
+                            doloremque deserunt eum nemo.
+                        </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                        <div class="details">
+                            <span class="name">Marnie Lotter</span>
+                            <span class="job">Web Developer</span>
+                        </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <img src="images/Al Paca, Peru.png" alt="" class="image" />
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                            saepe provident dolorem a quaerat quo error facere nihil deleniti
+                            eligendi ipsum adipisci, fugit, architecto amet asperiores
+                            doloremque deserunt eum nemo.
+                        </p>
+
+                        <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+                        <div class="details">
+                            <span class="name">Marnie Lotter</span>
+                            <span class="job">Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next nav-btn"><i class='bx bx-chevron-right'></i></div>
+                <div class="swiper-button-prev nav-btn"><i class='bx bx-chevron-left'></i></div>
+                <div class="swiper-pagination"></div>
             </div>
-        </div>
-    </div>
-    <div class="testimonials">
-        <div class="testimonial-wrap">
-            <div class="testimonial card-1 prev">
-                <i class="fa-solid fa-quote-left"></i>
-                <h4 class="fade-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut neque a blanditiis rem
-                    magni natus iure
-                    ipsum
-                    repudiandae eum maiores?</h4>
-                <i class="fa-solid fa-quote-right"></i>
-                <span class="fade-in">Stephen Bartlett</span>
-            </div>
-        </div>
-        <div class="testimonial-wrap">
-            <div class="testimonial card-2 show">
-                <i class="fa-solid fa-quote-left"></i>
-                <h4 class="fade-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut neque a blanditiis rem
-                    magni natus iure
-                    ipsum
-                    repudiandae eum maiores?</h4>
-                <i class="fa-solid fa-quote-right"></i>
-                <span class="fade-in">Stephen Bartlett</span>
-            </div>
-        </div>
-        <div class="testimonial-wrap">
-            <div class="testimonial card-3 next">
-                <i class="fa-solid fa-quote-left"></i>
-                <h4 class="fade-in">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut neque a blanditiis rem
-                    magni natus iure
-                    ipsum
-                    repudiandae eum maiores?</h4>
-                <i class="fa-solid fa-quote-right"></i>
-                <span class="fade-in">Stephen Bartlett</span>
-            </div>
-        </div>
-    </div>
-    <div class="background">
-        <button class="nextbutton">Next</button>
-    </div>
+        </section>
+    </section>
+
+
     <div class="container-footer">
         <div class="foot-links foot-pages">
             <h3>Useful Links</h3>
@@ -236,6 +262,8 @@
                 <a href="https://www.linkedin.com/in/christianpanter/"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
         </div>
+
+        <script src="js/cdn.jsdelivr.net_npm_swiper@10.3.1_swiper-bundle.min.js"></script>
 
 </body>
 

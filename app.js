@@ -52,56 +52,20 @@ for (let toggleBtn of toggleBtns) toggleBtn.parentElement.addEventListener('clic
 })
 
 
-
-// Carousel Buttons
-
-const nextbtn = document.querySelector(".nextbutton");
-const testimonials = document.querySelector(".testimonials");
-const testCount = testimonials.childElementCount;
-// const testimonials = document.querySelectorAll(".testimonial");
-
-
-nextbtn.addEventListener('click', () => {
-  console.log("clicked");
-  // console.log(testimonials.children[0]);
-let count = 1
-  
-  for(let testimonial of testimonials.children){
-    console.log(`item number ${count}`)
-    let testimonialClass = testimonial.children[0].classList
-    console.log(testimonialClass)
-    console.log(testimonialClass)
-
-    // let testimonialClass = testimonial.children[0].classList
-
-    // if(testimonialClass.contains("prev")) {
-    //   console.log("Contains Prev")
-    //   console.log(testimonialClass)
-    //   testimonialClass.remove("prev")
-    //   testimonialClass.add("show")
-    //   console.log("Changed to Show")
-    //   console.log(testimonialClass)
-
-    // } else if (testimonialClass.contains("show")){
-    //   console.log("Contains Show")
-    //   console.log(testimonialClass)
-    //   testimonialClass.remove("show")
-    //   testimonialClass.add("next")
-    //   console.log("Changed to next")
-    //   console.log(testimonialClass)
-
-    // } else if (testimonialClass.contains("next")){
-    //   console.log("Contains Next")
-    //   console.log(testimonialClass)
-    //   testimonialClass.remove("next")
-    //   console.log("Removed next")
-    //   console.log(testimonialClass)
-    // }
-
-    count += 1
-
-  };
-
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  grabCursor: true,
+  loop: true,
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+  },
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
 });
+
+
 
 

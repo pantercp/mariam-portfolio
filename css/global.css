@@ -23,7 +23,8 @@ h2 {
 
 body {
     background-color: var(--background-color);
-    --background-color: var(--secondary);
+    --background-color: var(--third);
+    color: var(--secondary);
     --text-color: #000;
     --accent-color: #840032;
     --accent-text-color: #CCD7C5;
@@ -252,66 +253,6 @@ nav {
 .fade-in.appear {
     opacity: 1;
 }
-
-
-/* ----------Drop Menu----------- */
-/* 
-.drop-menu {
-    margin: 0;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 0px;
-    overflow: hidden;
-    transition: all .5s ease-in-out;
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
-
-.drop-menu.open {
-    margin: 0;
-    height: 70vh;
-    overflow: hidden;
-    padding: 0.5rem;
-}
-
-.drop-menu ul {
-    list-style: none;
-    margin: 0;
-}
-
-.drop-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.drop-list a {
-    color: var(--accent-color);
-    font-size: 1.25rem;
-    text-decoration: none;
-}
-
-.drop-list li {
-    text-align: center;
-    padding: 0.35rem;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 10px;
-}
-
-.social-links i {
-    color: var(--accent-color);
-    font-size: 1.5rem;
-    padding: 1rem 1rem 0rem 1rem
-} */
 
 
 /* -------------Footer------------ */
