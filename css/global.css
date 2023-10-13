@@ -21,6 +21,10 @@ h2 {
     font-style: italic;
 }
 
+a{
+    color: var(--secondary);
+}
+
 body {
     background-color: var(--background-color);
     --background-color: var(--third);
@@ -256,7 +260,43 @@ nav {
 
 
 /* -------------Footer------------ */
-.container-footer {
+
+.container-footer{
+    padding: 1rem;
+    background-color: var(--primary);
+}
+
+.amini-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.container-footer img{
+    max-width: 150px;
+}
+
+.container-footer h4{
+    color: var(--third);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.container-footer ul{
+    list-style-type: none;
+}
+
+.content-cjpixel{
+    margin-inline: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    border-top: 1px solid var(--secondary);
+}
+
+
+/* .container-footer {
     display: flex;
     flex-wrap: wrap;
     padding-top: 20px;
@@ -349,4 +389,4 @@ nav {
 
 .cjpixel-content a {
     font-size: 1em;
-}
+} */
