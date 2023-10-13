@@ -111,7 +111,7 @@
     transition: all 0.3s ease-in;
 }
 
-.articles-section .article-detail.open ul span {
+.articles-section .article-detail ul span {
     font-style: italic;
     color: var(--third);
     font-weight: bold;
@@ -271,6 +271,19 @@
 .project-wrap p {
     padding: 1rem;
     max-width: 700px;
+}
+
+.project-wrap button.fill-in.white {
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary);
+    margin-top: 1rem;
+    color: var(--third);
+
+    &:hover,
+    &:focus {
+        box-shadow: inset 0 0 0 2em var(--third);
+        color: var(--secondary);
+    }
 }
 
 @media only screen and (max-width: 650px) {
