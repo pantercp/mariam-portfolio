@@ -17,6 +17,15 @@ burgerBtn.addEventListener('click', () => {
   }
 });
 
+// Coming SOON
+
+const comingSoons = document.querySelectorAll(".coming-soon");
+
+for(let comingSoon of comingSoons) comingSoon.addEventListener('click', () => {
+  alert("Requested Page Coming Soon!")
+})
+
+
 // Intersection For Fader
 
 const faders = document.querySelectorAll(".fade-in");
