@@ -425,7 +425,7 @@
     color: var(--secondary);
     text-align: center;
     font-size: 2rem;
-    padding-block: 1rem;
+    padding-block: 1rem 0;
 }
 
 .container-testimonial {
@@ -441,7 +441,7 @@
     position: relative;
     max-width: 900px;
     width: 100%;
-    padding: 40px 0;
+    padding-top: 40px;
     overflow: hidden;
 }
 

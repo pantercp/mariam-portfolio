@@ -301,7 +301,7 @@ nav {
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
-        row-gap: 1rem;
+        row-gap: 2rem;
     }
 
     .amini-content .content-pages {
