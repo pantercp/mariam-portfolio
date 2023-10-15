@@ -25,6 +25,10 @@ a {
     color: var(--secondary);
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 body {
     background-color: var(--background-color);
     --background-color: var(--third);
