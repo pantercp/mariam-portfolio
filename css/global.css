@@ -267,15 +267,6 @@ nav {
     max-width: 150px;
 }
 
-/* 
-.amini-content .content-pages{
-    order: 1;
-}
-
-.amini-content .content-social{
-    order: 2;
-} */
-
 .container-footer ul {
     list-style-type: none;
 }
@@ -299,6 +290,7 @@ nav {
         justify-content: center;
         text-align: center;
         row-gap: 2rem;
+        padding-top: 1rem;
     }
 
     .amini-content .content-pages {

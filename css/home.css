@@ -56,7 +56,7 @@
 /* -----------Portfolio---------- */
 
 .portfolio-section {
-    padding: 2rem 1rem;
+    padding: 2rem;
     background-color: var(--primary);
     color: var(--secondary);
     text-align: center;
@@ -150,7 +150,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: min(90vw, 500px);
+    width: min(85vw, 500px);
     cursor: pointer;
     background-color: var(--secondary);
     padding-inline: 1rem;
@@ -292,7 +292,7 @@
     margin-top: 2rem;
     max-width: 1000px;
     margin-inline: auto;
-    padding-inline: 1rem;
+    padding-inline: 2rem;
     text-align: center;
 }
 
@@ -362,7 +362,7 @@
 /* -----------Featured---------- */
 
 .contain-featured {
-    padding-inline: 1rem;
+    padding-inline: 2rem;
 }
 
 .featured-banner {
